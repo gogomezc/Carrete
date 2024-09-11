@@ -10,11 +10,12 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'detalle-evento',
+    loadChildren: () => import('./detalle-evento/detalle-evento.module').then( m => m.DetalleEventoPageModule)
   },
-  {
-    path: 'chatbot',
-    loadChildren: () => import('./chatbot/chatbot.module').then( m => m.ChatbotPageModule)
-  },
+
+ 
 ];
 
 @NgModule({
