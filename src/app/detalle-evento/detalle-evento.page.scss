@@ -1,0 +1,40 @@
+/* Estilo del contenedor de la información del evento */
+#EventInfo {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  #EventInfo li {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  
+  #EventInfo ion-icon {
+    margin-right: 5px;
+    color: var(--ion-color-primary); /* Color principal para los íconos */
+  }
+  
+  /* Imagen del evento */
+  ion-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Espaciado entre secciones */
+  ion-card-content, ion-list {
+    margin-top: 0px;
+  }
+  
+  /* Estilo de la etiqueta de precio */
+  ion-item ion-text {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: var(--ion-color-success); /* Color verde para el precio */
+  }
+  
